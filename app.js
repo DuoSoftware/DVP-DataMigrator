@@ -148,6 +148,9 @@ stream.pipe(parse({delimiter: ',', quote:'', escape:'', relax_column_count:true,
                 contacts.push(contact);
             });
         }
+    
+    
+    
 
         if(csvrow.PHONE04){
 
@@ -211,6 +214,13 @@ stream.pipe(parse({delimiter: ',', quote:'', escape:'', relax_column_count:true,
         if(csvrow.CUSTOMERCODE && csvrow.CUSTOMERCODE != '#'){
             extUser.ssn = csvrow.CUSTOMERCODE;
         }
+    
+        if(csvrow.CCVREF && csvrow.CCVREF != '#'){
+            extUser.thirdpartyreference = csvrow.CCVREF;
+        }
+    
+    
+    
 
         console.log(csvrow.CUSTOMERCODE);
         csvData.push(extUser);
