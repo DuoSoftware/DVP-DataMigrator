@@ -15,7 +15,7 @@
     "arc4": "^3.3.7",
     "bcryptjs": "^2.3.0",
     "create-cipher": "^3.1.0",
-    "dvp-mongomodels": "^3.7.2",
+    "dvp-mongomodels": "^4.8.25",
     "simple-encryptor": "^1.1.0"
   },
   "devDependencies": {},
