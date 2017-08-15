@@ -211,16 +211,13 @@ stream.pipe(parse({delimiter: ',', quote:'', escape:'', relax_column_count:true,
             extUser.email = csvrow.EMAIL;
         }
 
-        if(csvrow.CUSTOMERCODE && csvrow.CUSTOMERCODE != '#'){
+        if(csvrow.CUSTOMERCODE && csvrow.CUSTOMERCODE !  = '#'){
             extUser.ssn = csvrow.CUSTOMERCODE;
         }
     
         if(csvrow.CCVREF && csvrow.CCVREF != '#'){
             extUser.thirdpartyreference = csvrow.CCVREF;
         }
-    
-    
-    
 
         console.log(csvrow.CUSTOMERCODE);
         csvData.push(extUser);
